@@ -1,0 +1,49 @@
+:root {
+  --White : hsl(0, 100%, 100%);
+  --Purple100: hsl(275, 100%, 97%);
+  --Purple600: hsl(292, 16%, 49%);
+  --Purple950: hsl(292, 42%, 14%);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Purple600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- GENERAL --- */
+
+.accordion {
+  width: 60%;
+  max-width: 700px;
+  background-color: white;
+}
+
+/* OPTION */
+
+.option  {
+  margin: 30px 0;
+}
+
+.option__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
