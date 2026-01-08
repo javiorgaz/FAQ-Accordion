@@ -14,3 +14,16 @@ plusNode.forEach(button => {
 
   });
 });
+
+minusNode.forEach(button => {
+  button.addEventListener('click', () => {
+    const option = button.closest('.option');
+    const text = option.querySelector('.option__text');
+    const plus = option.querySelector('.plus-icon');
+
+    text.classList.add('hidden');
+    button.classList.add('hidden');
+    plus.classList.remove('hidden');
+
+  });
+});
